@@ -33,7 +33,7 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 //Time to start mongoose!
-mongoose.connect((process.env.MONGODB_URI ||'mongodb://localhost/bob'));
+mongoose.connect((mongodb:/heroku_lmpm4nk0:ugeta81hfgj51ns74b1m0gepfo@ds151941.mlab.ccom:51941/heroku_lmpm4nk0));
 
 //The database is accessed through mongoose. Any errors or successes will show that.
 var db = mongoose.connection;
