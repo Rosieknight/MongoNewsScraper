@@ -1,0 +1,25 @@
+<div class = "container">
+	<div class = "row">
+		<div class = "toeat col-xs-12 col-md-12">
+			<ul>
+				{{#each story}}
+      				<li class ="h4 text-center">
+        				{{this.burger_name}}
+        				{{#if this.}}
+        					{{#each note}}
+        				{{/if}}
+					    <form class = "create-update" action="/stories/{{this.id}}?" method="POST">
+					       	<div class ="form-group">
+					    		<label for="title">Give the note a title!:</label>
+			   					<input type="text" id="title" name="title">
+			   					<label for="body">Note goes here!:</label>
+			   					<input type="text" id="body" name="body">
+					       	</div>
+  				       		<button type="submit">Add a note!</button>
+					    </form>
+	    			</li>
+	  			{{/each}}
+			</ul>
+		</div>
+	</div>
+</div>
