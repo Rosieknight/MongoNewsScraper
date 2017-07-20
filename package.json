@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "This program scrapes a news page, then posts the stories so visitors can comment on them.",
   "main": "node server.js",
+  "engines": {
+    "node": "6.11.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
